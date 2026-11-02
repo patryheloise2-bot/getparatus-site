@@ -1,41 +1,97 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="theme-color" content="#050d18">
-<meta name="description" content="Paratus réunit vos tâches, vos échéances et votre planification en un seul endroit. Découvrez Paratus sur iPhone et iPad.">
-<meta name="robots" content="noindex,nofollow">
-<link rel="canonical" href="https://getparatus.fr/"><link rel="icon" type="image/svg+xml" href="assets/logo.svg">
-<link rel="preload" as="image" href="assets/telephone-seul.webp">
-<link rel="stylesheet" href="assets/landing-real.css">
-<title>Paratus — Une journée claire. L'esprit libre.</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050b17">
+  <meta name="description" content="Paratus, votre organisation à votre façon. Tâches, journée, planification, échéances et Focus sur iPhone et iPad.">
+  <meta name="robots" content="index,follow">
+  <!-- Renseigner uniquement le véritable lien Apple lorsque la fiche est publiée. -->
+  <meta name="paratus-app-store-url" content="">
+  <title>Paratus — Ton organisation. À ta façon.</title>
+  <link rel="icon" type="image/svg+xml" href="assets/logo-paratus.svg">
+  <link rel="preload" as="image" href="assets/iphone-hero.webp">
+  <link rel="stylesheet" href="styles.css">
+  <script defer src="interactions.js"></script>
+
+<style id="paratus-lancement-20261102">
+/* Bouton App Store officiel du lancement ; n'affecte pas la charte graphique existante. */
+a.paratus-appstore-launch{display:inline-flex;align-items:center;justify-content:center;gap:.65rem;
+  min-height:52px;padding:12px 21px;border-radius:13px;background:#fff;color:#091422;
+  border:1px solid rgba(255,255,255,.25);text-decoration:none;font-family:inherit;
+  font-size:15px;font-weight:750;line-height:1.25;white-space:normal;box-shadow:0 8px 28px rgba(0,0,0,.16)}
+a.paratus-appstore-launch:hover{background:#dceaff;transform:translateY(-1px)}
+a.paratus-appstore-launch:focus-visible{outline:3px solid #75baff;outline-offset:3px}
+</style>
 </head>
 <body>
-<a class="skip" href="#contenu">Passer au contenu</a>
-<header class="site-header"><nav class="wrap nav" aria-label="Navigation principale">
-<a class="brand" href="index.html" aria-label="Paratus, accueil"><img src="assets/logo.svg" width="32" height="40" alt=""><span>Paratus</span></a>
-<div class="nav-links"><a href="#fonctionnalites">L'application</a><a href="confidentialite.html">Confidentialité</a><a href="assistance.html">Assistance</a></div>
-</nav></header>
+<a class="skip-link" href="#contenu">Passer au contenu</a>
+<header class="header" id="haut">
+  <nav class="nav shell" aria-label="Navigation principale">
+    <a class="brand" href="#haut" aria-label="Paratus, accueil"><img class="brand-logo" src="assets/logo-paratus.svg" width="34" height="42" alt=""><span>Paratus</span></a>
+    <div class="nav-links">
+      <a href="#fonctionnalites">Fonctionnalités</a>
+      <button type="button" class="nav-text-button" data-open-video>Voir le film</button>
+      <a class="nav-privacy" href="https://getparatus.fr/confidentialite.html">Confidentialité</a>
+      <a class="button button-small button-primary" href="#telecharger" data-appstore>Disponible sur l’App Store <span aria-hidden="true">↗</span></a>
+    </div>
+  </nav>
+</header>
 <main id="contenu">
-<section class="hero wrap" aria-labelledby="hero-title">
-<div class="hero-copy">
-<p class="eyebrow">L'organisation, repensée</p>
-<h1 id="hero-title">Une journée claire.<br>L'esprit libre.</h1>
-<p class="hero-desc">Paratus vous aide à organiser vos tâches, vos échéances et votre planification, tout en un seul endroit.</p>
-<div class="cta-row"><button type="button" class="cta primary" data-open-film>Découvrir Paratus <span aria-hidden="true">→</span></button><a href="assistance.html" class="cta secondary">Nous contacter</a></div>
-<p class="release">Paratus se prépare à arriver sur iPhone et iPad.</p>
+  <div class="opening-scene" id="decouvrir">
+    <div class="scene-glow glow-one" aria-hidden="true"></div>
+    <div class="scene-glow glow-two" aria-hidden="true"></div>
+    <svg class="scene-line" aria-hidden="true" viewBox="0 0 1440 1160" preserveAspectRatio="none"><path d="M-80 1010 C280 1000 435 820 720 660 S1090 500 1490 80"/></svg>
+    <section class="hero shell" aria-labelledby="hero-title">
+      <div class="hero-copy reveal is-visible">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> UNE ORGANISATION QUI SUIT TON RYTHME</p>
+        <h1 id="hero-title">Ton organisation.<br><span class="gradient-text">À ta façon.</span></h1>
+        <p class="hero-description">Tâches, planning, échéances et Focus. Paratus t’aide à garder le cap, chaque jour.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#telecharger" data-appstore>Disponible sur l’App Store <span aria-hidden="true">↗</span></a>
+          <a class="button button-outline" href="#video">Découvrir Paratus <span aria-hidden="true">↓</span></a>
+        
+<a id="paratus-appstore-officiel" class="paratus-appstore-launch" href="https://apps.apple.com/fr/app/id6826694305" target="_blank" rel="noopener noreferrer" aria-label="Télécharger Paratus sur l’App Store">Télécharger sur l’App Store <span aria-hidden="true">↗</span></a>
 </div>
-<div class="phone-stage" aria-label="Aperçu de l'application Paratus">
-<img class="phone-image" src="assets/telephone-seul.webp" width="1161" height="1908" alt="Le téléphone de la maquette Paratus avec ses vraies cartes, tâches, échéances et icônes" fetchpriority="high" draggable="false">
-</div>
-</section>
-<section class="features wrap" id="fonctionnalites" aria-label="Fonctionnalités">
-<article class="feature"><span class="feat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 7h16M4 17h16"/><circle cx="9" cy="7" r="2"/><circle cx="16" cy="17" r="2"/></svg></span><div><h2>Personnalisation</h2><p>Adaptez Paratus à votre façon de fonctionner, avec un environnement simple et flexible.</p></div></article>
-<article class="feature"><span class="feat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M7 3v4M17 3v4M3 10h18M8 15l2.5 2.5L16 12"/></svg></span><div><h2>Planification</h2><p>Organisez vos journées et anticipez vos prochains jours, sans effort.</p></div></article>
-<article class="feature"><span class="feat-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r="1"/></svg></span><div><h2>Focus</h2><p>Concentrez-vous sur l'essentiel grâce à une interface claire et sans distraction.</p></div></article>
-</section>
+        <p class="hero-note">iPhone &amp; iPad · Pensé pour ton quotidien</p>
+      </div>
+      <div class="hero-visual reveal is-visible">
+        <span class="phone-aura" aria-hidden="true"></span>
+        <img class="hero-phone" src="assets/iphone-hero.webp" alt="Écran réel de Paratus sur iPhone : accueil, tâches et échéances" width="763" height="1541" fetchpriority="high" decoding="async">
+        
+      </div>
+    </section>
+    <section class="timeline-shell" aria-labelledby="timeline-heading" id="timeline">
+      <div class="shell timeline-heading-wrap reveal"><p class="eyebrow timeline-overline">CHAQUE MOMENT COMPTE</p><h2 id="timeline-heading">Tout prend <span class="gradient-text">sa place.</span></h2><p>Du premier coup d’œil au dernier créneau, ton organisation suit ton rythme.</p></div>
+      <div class="timeline-viewport">
+        <div class="timeline-body shell" id="interactive-timeline">
+          <div class="timeline-rail" aria-hidden="true"><div class="timeline-track"></div><div class="timeline-fill"></div></div>
+          <div class="timeline-moments" aria-label="Explorer les étapes d’une journée">
+            <button class="timeline-item is-active" type="button" data-moment="0" aria-pressed="true"><span class="time-label">À placer</span><span class="time-point amber"></span><span class="task-card"><span class="task-color amber"></span><span class="task-content"><span class="task-meta">HISTOIRE · RÉVISION</span><strong>Réviser la Révolution</strong><span class="task-details">● Important · Non planifiée · 1h</span></span><span class="task-check"></span></span></button>
+            <button class="timeline-item" type="button" data-moment="1" aria-pressed="false"><span class="time-label">16:00</span><span class="time-point azure"></span><span class="task-card"><span class="task-color azure"></span><span class="task-content"><span class="task-meta">FRANÇAIS · LECTURE</span><strong>Lire Les Misérables</strong><span class="task-details">● Moyen · 2 dates prévues · 45 min</span></span><span class="task-check"></span></span></button>
+            <button class="timeline-item" type="button" data-moment="2" aria-pressed="false"><span class="time-label">17:30</span><span class="time-point red"></span><span class="task-card"><span class="task-color red"></span><span class="task-content"><span class="task-meta">MATHS · CONTRÔLE</span><strong>Réviser les dérivées</strong><span class="task-details">● Urgent · 3 dates prévues · 1h30</span></span><span class="task-check"></span></span></button>
+            <button class="timeline-item" type="button" data-moment="3" aria-pressed="false"><span class="time-label">Lun. 26</span><span class="time-point violet"></span><span class="task-card"><span class="task-color violet"></span><span class="task-content"><span class="task-meta">ANGLAIS · ORAL</span><strong>Préparer l’exposé</strong><span class="task-details">● Important · 1 date prévue · 30 min</span></span><span class="task-check"></span></span></button>
+          </div>
+          <div class="timeline-center-mark" aria-hidden="true">P</div>
+        </div>
+      </div>
+      <p class="timeline-hint">Sélectionne une tâche pour suivre le fil de la journée <span aria-hidden="true">↗</span></p>
+    </section>
+  </div>
+  <section class="film-section shell reveal" id="video" aria-labelledby="film-section-title">
+    <div class="film-copy"><p class="eyebrow">PARATUS EN ACTION</p><h2 id="film-section-title">Regarde comment<br><span class="gradient-text">tout prend sa place.</span></h2><p>Un aperçu rapide de Paratus, de la création d’une tâche jusqu’au suivi de la journée.</p><button class="button button-primary" type="button" data-open-video><span class="play-glyph" aria-hidden="true">▶</span> Voir le film de présentation</button></div>
+    <div class="film-poster" aria-label="Capture réelle de Paratus : détail des échéances d’une journée"><span class="film-aura" aria-hidden="true"></span><img src="assets/iphone-detail.webp" loading="lazy" alt="Écran réel de Paratus : détail des échéances du 3 novembre" width="763" height="1541"></div>
+  </section>
+  <section id="fonctionnalites" class="feature-story shell" aria-labelledby="features-title">
+    <header class="features-intro reveal"><p class="eyebrow">DÉCOUVRE PARATUS</p><h2 id="features-title">Une appli. <span class="gradient-text">Tout s’éclaire.</span></h2><p>Tout ce dont tu as besoin pour organiser ton temps, sans t’éparpiller.</p></header>
+    <article class="story-row reveal" id="accueil"><div class="story-copy"><span class="story-index">01 — ACCUEIL</span><h3>Ta journée,<br><span class="gradient-text">d’un coup d’œil.</span></h3><p>Visualise ce qui est prévu, ce qui reste à placer et tes échéances, au même endroit.</p><span class="story-chip">Tout ce qui compte, sans chercher.</span></div><div class="story-art"><span class="story-halo"></span><img loading="lazy" src="assets/iphone-accueil.webp" alt="Capture réelle de Paratus, page Accueil avec les tâches du jour" width="763" height="1541"></div></article>
+    <article class="story-row story-reversed reveal" id="planning"><div class="story-copy"><span class="story-index">02 — PLANIFICATION</span><h3>Place tes tâches<br><span class="gradient-text">dans ta semaine.</span></h3><p>Répartis tes activités entre tes journées, repère tes créneaux et garde une vue d’ensemble.</p><span class="story-chip">Du temps pour chaque chose.</span></div><div class="story-art"><span class="story-halo"></span><img loading="lazy" src="assets/iphone-planification.webp" alt="Capture réelle de Paratus, écran de planification hebdomadaire" width="763" height="1541"></div></article>
+    <article class="story-row story-focus reveal" id="focus"><div class="story-copy"><span class="story-index">03 — FOCUS</span><h3>Concentre-toi,<br><span class="gradient-text">étape par étape.</span></h3><p>Un minuteur, ta tâche en cours et une liste d’étapes. Juste ce qu’il faut pour avancer.</p><span class="story-chip">Une tâche à la fois.</span></div><div class="story-art"><span class="story-halo"></span><img loading="lazy" src="assets/iphone-focus.webp" alt="Capture réelle de Paratus, mode Focus avec un minuteur et sa liste d’étapes" width="763" height="1541"></div></article>
+    <article class="story-row story-reversed reveal" id="echeances"><div class="story-copy"><span class="story-index">04 — ÉCHÉANCES</span><h3>Tout ton mois,<br><span class="gradient-text">en un regard.</span></h3><p>Anticipe tes échéances sur un calendrier clair, et retrouve le détail de chaque date.</p><span class="story-chip">Pour ne rien laisser de côté.</span></div><div class="story-art"><span class="story-halo"></span><img loading="lazy" src="assets/iphone-echeances.webp" alt="Capture réelle de Paratus, calendrier des échéances du mois" width="763" height="1541"></div></article>
+  </section>
+  <section id="telecharger" class="download-section shell reveal" aria-labelledby="download-heading"><div class="download-glow" aria-hidden="true"></div><div><p class="eyebrow">ET MAINTENANT ?</p><h2 id="download-heading">Prête à <span class="gradient-text">t’organiser autrement ?</span></h2><p>Paratus se prépare à arriver sur l’App Store. En attendant, découvre comment l’application fonctionne.</p></div><div class="download-actions"><a href="#telecharger" class="button button-primary" data-appstore>Disponible sur l’App Store <span aria-hidden="true">↗</span></a><a href="#fonctionnalites" class="button button-outline">Explorer les fonctionnalités</a></div></section>
 </main>
-<footer class="footer"><div class="wrap footer-row"><div class="footer-left"><a class="footer-brand" href="index.html"><img src="assets/logo.svg" alt="" width="26" height="31"> Paratus</a><span>© 2026 Paratus. Tous droits réservés.</span></div><nav class="footer-nav" aria-label="Liens légaux"><a href="mentions-legales.html">Mentions légales</a><a href="confidentialite.html">Politique de confidentialité</a><a href="assistance.html">Assistance</a><a href="assistance.html">Contact</a><a href="mailto:contact.getparatus@gmail.com">contact.getparatus@gmail.com</a></nav></div></footer>
-<div class="film-layer" id="film-layer" hidden><div class="film-shade" data-close-film></div><div class="film-dialog" role="dialog" aria-modal="true" aria-labelledby="film-title" tabindex="-1"><div class="film-toolbar"><h2 id="film-title">Découvrir Paratus</h2><button type="button" class="film-close" data-close-film aria-label="Fermer la vidéo">✕</button></div><video id="film-video" controls playsinline preload="none" poster="assets/film-cover.webp"><source src="assets/paratus-pub-v5.mp4" type="video/mp4">Votre navigateur ne prend pas en charge cette vidéo.</video></div></div>
-<script src="assets/maquette-fidele.js" defer></script>
-</body></html>
+<footer class="footer"><div class="shell footer-inner"><div><a class="brand footer-brand" href="#haut"><img class="brand-logo" src="assets/logo-paratus.svg" width="29" height="34" alt=""><span>Paratus</span></a><p>Ton organisation. À ta façon.</p></div><nav aria-label="Liens d’information et légaux"><a href="https://getparatus.fr/mentions-legales.html">Mentions légales</a><a href="https://getparatus.fr/confidentialite.html">Confidentialité</a><a href="https://getparatus.fr/assistance.html">Assistance</a><a href="mailto:contact.getparatus@gmail.com">Contact</a></nav></div></footer>
+<div class="video-modal" id="video-modal" hidden><div class="video-backdrop" data-close-video></div><section class="video-dialog" role="dialog" aria-modal="true" aria-labelledby="modal-title" tabindex="-1"><div class="video-toolbar"><h2 id="modal-title">Découvrir Paratus</h2><button class="video-close" type="button" data-close-video aria-label="Fermer la vidéo">✕</button></div><video id="promo-video" controls playsinline preload="none" poster="assets/iphone-detail.webp"><source src="https://getparatus.fr/assets/paratus-pub-v5.mp4" type="video/mp4">La vidéo n’est pas disponible sur ce navigateur.</video><p>Vidéo existante du site officiel, chargée lorsque tu la lances.</p></section></div>
+</body>
+</html>
